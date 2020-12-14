@@ -1,3 +1,6 @@
+# Get an updated config.sub and config.guess
+cp $BUILD_PREFIX/share/gnuconfig/config.* .
+cp $BUILD_PREFIX/share/gnuconfig/config.* ./Modules/_ctypes/libffi
 
 if [[ ${c_compiler} =~ .*toolchain.* ]]; then
     cp ${RECIPE_DIR}/toolchain_build.sh do_build.sh
